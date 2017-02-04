@@ -222,7 +222,7 @@ static const struct adxl34x_platform_data adxl34x_default_init = {
 	.free_fall_threshold = 8,
 	.free_fall_time = 0x20,
 	.data_rate = 8,
-	.data_range = ADXL_FULL_RES,
+	.data_range = ADXL_FULL_RES|INT_INVERT,
 
 	.ev_type = EV_ABS,
 	.ev_code_x = ABS_X,	/* EV_REL */
