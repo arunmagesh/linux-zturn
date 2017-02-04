@@ -356,6 +356,7 @@ static void xiic_fill_tx_fifo(struct xiic_i2c *i2c)
 
 static void xiic_wakeup(struct xiic_i2c *i2c, int code)
 {
+	msleep(1);
 	i2c->tx_msg = NULL;
 	i2c->rx_msg = NULL;
 	i2c->nmsgs = 0;
